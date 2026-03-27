@@ -47,9 +47,9 @@ Spring Boot 애플리케이션을 기반으로 Docker 이미지의 빌드 시간
 ---
 # 경량화 전 실습 과정
 
-## 1️⃣ 깃허브에서 프로젝트 받아오기
+## 1️⃣ 깃허브에서 프로젝트 클론
 
-리눅스 서버에서 실습을 진행하며, Docker 성능 측정을 위해 선정한 Spring Boot 프로젝트를 ``clone``합니다. <br>이후 해당 디렉터리로 이동하여 Dockerfile과 애플리케이션 구조를 확인합니다.
+linux 서버에서 실습을 진행하며, Docker 성능 측정을 위해 선정한 Spring Boot 프로젝트를 ``clone``합니다. <br>이후 해당 디렉터리로 이동하여 Dockerfile과 애플리케이션 구조를 확인합니다.
 
 ```bash
 mkdir DockerOptimizerLab
@@ -177,7 +177,7 @@ docker history petclinic-basic:latest
 - 실행 방식 제거
 
 실행 구조를 단순화하고 불필요한 요소를 제거하여   
-이미지의 크기 감소와 성능 향상을 목적으로 최적화를 진행하였다.
+이미지의 크기 감소와 성능 향상을 목적으로 최적화를 진행하였습니다.
 
 ## 2️⃣ 최적화 Dockerfile
 
