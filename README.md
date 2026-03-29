@@ -94,7 +94,7 @@ time docker build -t petclinic-basic:latest .
 ```
 
 <br>
-<img width="653" height="364" alt="image01" src="https://github.com/user-attachments/assets/155aebdd-5404-4c03-9219-156d8cb7c61b" />
+<img width="953" height="519" alt="image" src="https://github.com/user-attachments/assets/10c38201-ce6c-4332-8766-2f12078a3c2a" />
 
 <img width="637" height="492" alt="image02" src="https://github.com/user-attachments/assets/e2e0be10-00c5-4902-b142-6a71b1f8d6e7" />
 
@@ -152,7 +152,7 @@ time docker build -t petclinic-basic:latest .
 ```bash
 docker history petclinic-basic:latest
 ```
-<img width="633" height="500" alt="image" src="https://github.com/user-attachments/assets/d004d6d7-8db4-48ff-9f4f-1ef2b8205d32" />
+<img width="954" height="485" alt="image" src="https://github.com/user-attachments/assets/3a37474c-3da5-4551-9642-a4ca94866570" />
 
 <br>
 
@@ -249,7 +249,7 @@ ENTRYPOINT ["java", "-jar", "/app/app.jar"]
 ```bash
 docker build -f Dockerfile_new -t dist_image .
 ```
-<img width="600" height="400" alt="image (21)" src="https://github.com/user-attachments/assets/84c3649a-ba4a-4645-8cf9-8fcad5aa729e" />
+<img width="838" height="722" alt="image" src="https://github.com/user-attachments/assets/741dc0d9-47c1-4847-9e5d-92bbbdbb29f1" />
 
 <img width="792" height="87" alt="image" src="https://github.com/user-attachments/assets/2857888b-1d4d-4792-add7-c785b3511805" />
 
@@ -296,9 +296,10 @@ docker build -f Dockerfile_new -t dist_image .
 **Docker의 layer cache** 구조 때문으로, pom.xml이 의존성 처리 이전 단계에서 복사되기 때문에 작은 변경만 발생해도 의존성 관련 <br>레이어가 다시 실행되기 때문입니다. <br> <br>
 **BuildKit의 cache mount**를 활용하여 .m2 디렉터리를 재사용하면, pom.xml 변경 시에도 모든 의존성을 다시 다운로드하지 않아도 됩니다.<br> 또한 **dependency:go-offline**을 사용하면 플러그인까지 포함한 **의존성을 사전에 확보**할 수 있어 빌드 과정에서의 추가 네트워크 비용을 줄일 수 있습니다. <br><br>
 #### <buildkit 사용전><br>
-<img width="596" height="472" alt="image" src="https://github.com/user-attachments/assets/c631f3a0-b8cf-4d40-b878-f0d5fe7c49f5" /><br>
+<img width="758" height="602" alt="image" src="https://github.com/user-attachments/assets/2aa29573-184c-47ed-bc53-02af32f6f1b6" /><br>
+
 #### <buildkit 사용후><br>
-<img width="598" height="477" alt="image" src="https://github.com/user-attachments/assets/6798263e-b70e-420e-bd09-7fb288f45b79" />
+<img width="754" height="606" alt="image" src="https://github.com/user-attachments/assets/360550a8-7e50-4cee-a280-b520edf13625" />
 
 
 <br>
