@@ -235,8 +235,8 @@ ENTRYPOINT ["java", "-jar", "/app/app.jar"]
 - **실행 단계**에서 ``debian:bookworm-slim``을 사용하며 ``./mvnw clean package``를 통해 실행 가능한 jar 파일 생성합니다.
 
 **2. jlink 기반 커스텀 JRE 생성**
-- **``jdeps``**로 불필요한 JDK 구성요소를 제거하고 애플리케이션 실행에 필요한 java 모듈만 구성합니다.
-- **``jlink``**를 통해 **경량 JRE를 생성**해 실행 환경 최소화를 진행합니다.
+- ``jdeps``로 불필요한 JDK 구성요소를 제거하고 애플리케이션 실행에 필요한 java 모듈만 구성합니다.
+- ``jlink``를 통해 **경량 JRE를 생성**해 실행 환경 최소화를 진행합니다.
 
 **3. 경량 베이스 이미지 사용**
 - 런타임 단계에서 경량 이미지인``debian:bookworm-slim``사용해 이미지 크기를 감소시킵니다.
